@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
         // Define your environment variables here
-        JAVA_HOME = "/opt/java/openjdk/bin/java"
+        JAVA_HOME = "/opt/java/openjdk/"
     }
   stages {
     stage('Build') {

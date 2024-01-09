@@ -41,9 +41,7 @@ pipeline {
     }
 
   }
-  environment {
-    JAVA_HOME = '/opt/java/openjdk/bin/java'
-  }
+
   post {
     always {
       cleanWs()

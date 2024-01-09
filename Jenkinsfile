@@ -7,6 +7,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'pwd'
         sh 'echo $JAVA_HOME'
         sh 'gradle clean package'
       }

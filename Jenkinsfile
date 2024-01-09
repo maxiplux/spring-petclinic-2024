@@ -11,6 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Use your build tool (e.g., Maven) to compile the project
+                sh 'echo $JAVA_HOME'
                 sh 'mvn clean package'
             }
         }
